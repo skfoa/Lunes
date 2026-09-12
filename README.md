@@ -2,7 +2,8 @@
 
 # ⭐ **觉得有用？给个 Star 支持一下！**
 
-> 🧪 注册地址：[https://betadash.lunes.host/](https://betadash.lunes.host/)
+> 🧪 注册地址：[https://betadash.lunes.host/](https://betadash.lunes.host/)  
+> ⏰ 最近运行时间：2026-09-12 13:55:00 (北京时间)
 
 定时登录 Lunes Host 并访问服务器页面，保持账号活跃，避免因长时间不活动被暂停。支持 Cloudflare 绕过、Telegram 通知、代理等功能。
 
@@ -62,6 +63,13 @@ your-email@example.com-----your_password_123
 1. 创建 Bot：向 [@BotFather](https://t.me/BotFather) 发送 `/newbot`，获取 Token  
 2. 获取 Chat ID：向 [@userinfobot](https://t.me/userinfobot) 发消息或直接与你的 Bot 对话后访问 `https://api.telegram.org/bot<YourToken>/getUpdates`  
 3. 将 Bot Token 和 Chat ID 填入 Secrets
+
+### 5. 开启 Workflow 读写权限（防止 60 天自动停用）
+
+GitHub 会自动停用超过 60 天无活跃提交的仓库中的定时工作流。为解决此问题，本工作流每次运行都会自动更新 `README.md` 中的运行时间戳并提交以保持活跃。
+
+需要开启写权限：
+进入仓库 `Settings` → `Actions` → `General` → 页面底部 `Workflow permissions`，勾选 **Read and write permissions** 并点击 `Save`。
 
 ---
 
